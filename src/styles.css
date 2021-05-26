@@ -1,4 +1,9 @@
+body {
+  background-color: dodgerblue;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  font-weight: bold;
 }

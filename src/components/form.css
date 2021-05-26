@@ -31,10 +31,3 @@ button {
   width: 5rem;
   align-self: center;
 }
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 1rem;
-  width: 100%;
-}

@@ -17,7 +17,6 @@ const Form = ({ onChange, name }) => {
               type="text"
               name="name"
               onChange={onChange}
-              placeholder="Please type your name"
               value={name}
               required
             />
@@ -26,35 +25,32 @@ const Form = ({ onChange, name }) => {
         <div className="form-group">
           <label>
             Age:
-            <input
-              type="number"
-              name="age"
-              placeholder="Type your age"
-              required
-            />
+            <input type="number" name="age" required />
           </label>
         </div>
         <div className="form-group">
-          <span>Gender</span>
-          <label>
-            Male:
-            <input type="radio" name="gender" value="male" required />
-          </label>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label>
-            Female:
-            <input type="radio" name="gender" value="male" required />
-          </label>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <label>
-            Other:
-            <input type="radio" name="gender" value="male" required />
-          </label>
+          <fieldset>
+            <legend>Gender</legend>
+            <label>
+              Male:
+              <input type="radio" name="gender" value="male" required />
+            </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label>
+              Female:
+              <input type="radio" name="gender" value="male" required />
+            </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label>
+              Other:
+              <input type="radio" name="gender" value="male" required />
+            </label>
+          </fieldset>
         </div>
         <div className="form-group">
           <label>
             City:
-            <input type="text" name="city" placeholder="City where you live" />
+            <input type="text" name="city" />
           </label>
         </div>
         <div className="form-group">
@@ -71,8 +67,8 @@ const Form = ({ onChange, name }) => {
         </div>
         <div className="form-group">
           <label>
-            Name:
-            <textarea name="phrase" placeholder="Type your favorite phrase" />
+            Favorite phrase:
+            <textarea name="phrase" />
           </label>
         </div>
         <div>

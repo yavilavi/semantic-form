@@ -8,6 +8,7 @@ const App = () => {
   const onChange = (e) => {
     setName(e.target.value);
   };
+  document.getElementById("noscript").style.display = "none";
   return (
     <div className="App">
       <Header name={name} />
