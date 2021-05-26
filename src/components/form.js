@@ -70,8 +70,10 @@ const Form = ({ onChange, name }) => {
           </label>
         </div>
         <div className="form-group">
-          <label>Name:</label>
-          <textarea name="phrase" placeholder="Type your favorite phrase" />
+          <label>
+            Name:
+            <textarea name="phrase" placeholder="Type your favorite phrase" />
+          </label>
         </div>
         <div>
           <button type="submmit">Send</button>

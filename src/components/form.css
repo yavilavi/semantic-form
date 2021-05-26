@@ -6,9 +6,9 @@ main {
 }
 form {
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: auto;
   justify-content: center;
-  height: 25vw;
   border: solid 1px;
   padding: 0.5rem;
 }
