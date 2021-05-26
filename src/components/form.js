@@ -1,3 +1,4 @@
+import "./form.css";
 const Form = ({ onChange, name }) => {
   return (
     <main className="form">
@@ -18,32 +19,36 @@ const Form = ({ onChange, name }) => {
               onChange={onChange}
               placeholder="Please type your name"
               value={name}
+              required
             />
           </label>
         </div>
         <div className="form-group">
           <label>
             Age:
-            <input type="number" name="age" placeholder="Type your age" />
+            <input
+              type="number"
+              name="age"
+              placeholder="Type your age"
+              required
+            />
           </label>
         </div>
         <div className="form-group">
+          <span>Gender</span>
           <label>
-            Gender:&nbsp;&nbsp;
-            <label>
-              Male:
-              <input type="radio" name="gender" value="male" />
-            </label>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <label>
-              Female:
-              <input type="radio" name="gender" value="male" />
-            </label>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <label>
-              Other:
-              <input type="radio" name="gender" value="male" />
-            </label>
+            Male:
+            <input type="radio" name="gender" value="male" required />
+          </label>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label>
+            Female:
+            <input type="radio" name="gender" value="male" required />
+          </label>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label>
+            Other:
+            <input type="radio" name="gender" value="male" required />
           </label>
         </div>
         <div className="form-group">
@@ -67,6 +72,9 @@ const Form = ({ onChange, name }) => {
         <div className="form-group">
           <label>Name:</label>
           <textarea name="phrase" placeholder="Type your favorite phrase" />
+        </div>
+        <div>
+          <button type="submmit">Send</button>
         </div>
       </form>
     </main>

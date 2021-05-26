@@ -1,0 +1,40 @@
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+form {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  height: 25vw;
+  border: solid 1px;
+  padding: 0.5rem;
+}
+
+input {
+  margin-left: 1rem;
+}
+
+.form-group:nth-child(6) {
+  display: grid;
+  justify-content: center;
+}
+span,
+textarea {
+  display: block;
+  align-self: center;
+}
+
+button {
+  width: 5rem;
+  align-self: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 1rem;
+  width: 100%;
+}
