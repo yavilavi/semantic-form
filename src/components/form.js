@@ -55,7 +55,7 @@ const Form = ({ onChange, name }) => {
         </div>
         <div className="form-group">
           <label>
-            Native languajes:&nbsp;&nbsp;
+            Native languaje:&nbsp;&nbsp;
             <select name="languaje">
               <option value="spanish">Spanish</option>
               <option value="english">English</option>
