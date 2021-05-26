@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/header";
 import Form from "./components/form";
 import Footer from "./components/footer";
+import "./styles.css";
 const App = () => {
   const [name, setName] = useState("");
   const onChange = (e) => {
@@ -10,7 +11,7 @@ const App = () => {
   return (
     <div className="App">
       <Header name={name} />
-      <Form onChange={onChange} />
+      <Form onChange={onChange} name={name} />
       <Footer />
     </div>
   );
